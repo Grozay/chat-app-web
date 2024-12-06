@@ -23,7 +23,7 @@ const useLogin = () => {
             setAuthUser(response.data.user)
             toast.success(response.data.message)
         } catch (error) {
-            toast.error(error.response.data.message)
+            toast.error(error.message)
         } finally {
             setLoading(false)
         }
