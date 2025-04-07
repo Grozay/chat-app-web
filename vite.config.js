@@ -10,7 +10,8 @@ export default defineConfig({
       '/api': {
         // target: 'http://localhost:5000',
         target: 'https://chat-app-api-n3tv.onrender.com',
-        changeOrigin: true
+        changeOrigin: true,
+        secure: true
       }
     }
   }
